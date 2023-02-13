@@ -11,4 +11,4 @@
     - The client side is static website which links to the server using JavaScript.
     - The server runs using node and the server need to keep running so that the client can connect to the server.
 
-<img src="./image.png">
+<img src="image.png">
