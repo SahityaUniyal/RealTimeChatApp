@@ -1,0 +1,165 @@
+/* -----------------------*/
+/* RESET    */
+/* ---------------------*/
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img,
+picture{
+    display: block;
+}
+
+input,
+button,
+textarea,
+select,
+form {
+  font: inherit;
+  color: inherit;
+}
+
+/* SCROLLBAR */
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: hsl(var(--clr-grey));
+        border-radius: 1rem;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        border-radius: 1rem;
+        background: hsl(var(--clr-light-blue));
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: hsl(var(--clr-light-blue));
+    }  
+
+/* -----------------------*/
+/* CUSTOM PROPERTIES    */
+/* ---------------------*/
+:root{
+    --clr-white: 0, 0%, 100%;
+    --clr-dark: 0, 0%, 0%;
+    --clr-grey: 0, 1%, 30%;
+    --clr-dark-blue: 220, 100%, 3%;
+    --clr-light-blue: 222, 93%, 6%;
+    --clr-pink: 350, 79%, 59%;
+    color: hsl(220, 100%, 3%);
+}
+
+/* -----------------------*/
+/* Message Design    */
+/* ---------------------*/
+
+.left{
+    float: left;
+    clear: both;
+    color:hsl(255, 20%, 4%);
+    background-color: hsl(var(--clr-light-blue));
+    color:white;
+    width: 40%;
+    padding-left: 2rem;
+    padding: 1rem;
+    border-radius : 0.5rem 0.5rem 0.5rem 0 ;
+    
+}
+  
+.right{
+    float:right;
+    clear: both;
+    background-color: hsl(var(--clr-pink));
+    width: 40%;
+    padding: 1rem;
+    border-radius : 0.5rem 0.5rem 0 0.5rem;
+    color: hsl(var(--clr-white));
+}
+.center{
+    float: left;
+    clear: both;
+    background-color: hsl(var(--clr-grey));
+    width: 100%;
+    text-align: center;
+    padding: 0rem;
+    color: hsl(var(--clr-white));
+    border-radius: 5px;
+}
+
+
+/* -----------------------*/
+/* STYLING    */
+/* ---------------------*/
+
+body{
+    background-color: hsl(var(--clr-dark));
+    letter-spacing: 2px;
+}
+
+.nav{
+    width:80%;
+    margin: 1rem auto;
+    text-align: center;
+    background-color: hsl(var(--clr-dark-blue));
+    box-shadow: 2px 0px 200px 0px hsl(var(--clr-grey));
+    border-radius: 1rem;
+    color: hsl(var(--clr-white));
+}
+main{
+    background-color: hsl(var(--clr-dark-blue));
+    border-radius: 2rem;
+    width:80%;
+    margin: auto;
+    padding:1rem;
+    height: 85vh;
+    box-shadow: 2px 0px 200px 0px hsl(var(--clr-grey));
+}
+
+.messages-container{
+    height: 70vh;
+    margin:1rem 0;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.form-data{
+    width:100%;
+}
+
+.form{
+    display: flex;
+    gap:1rem;
+}
+.message{
+    width:100%;
+}
+.send{
+    width: max-content;
+    padding:0.5rem;
+}
+
+@media screen and (max-width:700px){
+    .nav{
+        width:90%;
+    }
+    main{
+        width:90%;
+    }
+}
+@media screen and (max-width:425px){
+    .nav{
+        width:100%;
+    }
+    main{
+        width:100%;
+    }
+}
