@@ -66,21 +66,31 @@ form {
 .left{
     float: left;
     clear: both;
+    width: 40%;
+    
+}
+.left .msg{
     color:hsl(255, 20%, 4%);
     background-color: hsl(var(--clr-light-blue));
     color:white;
-    width: 40%;
     padding-left: 2rem;
     padding: 1rem;
     border-radius : 0.5rem 0.5rem 0.5rem 0 ;
-    
+
 }
-  
+.name{
+    color:white;
+    margin: 0;
+    margin-left: 1rem;
+    width: max-content;
+}
 .right{
     float:right;
     clear: both;
-    background-color: hsl(var(--clr-pink));
     width: 40%;
+}
+.right .msg{
+    background-color: hsl(var(--clr-pink));
     padding: 1rem;
     border-radius : 0.5rem 0.5rem 0 0.5rem;
     color: hsl(var(--clr-white));
