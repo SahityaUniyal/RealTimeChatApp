@@ -19,4 +19,4 @@
 
 ## Sample Image
 
-<img src="image.jpg">
+![image](https://user-images.githubusercontent.com/65817327/218776956-dd20032d-3777-49e5-9c83-3e97446ae406.jpg)
