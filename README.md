@@ -16,3 +16,7 @@
 ## About
 - This app is built using socket.io api.
 - The app lets any number of users join and chat among themselves.
+
+## Sample Image
+
+<img src="image.jpg">
