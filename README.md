@@ -9,6 +9,7 @@
 ## Technology Stack
 - HTML
 - CSS
+- Bootstrap
 - JavaScript
 - Node.js
 - Socket.io
